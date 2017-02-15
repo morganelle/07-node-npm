@@ -1,0 +1,31 @@
+{
+  "name": "starter-code",
+  "version": "1.0.0",
+  "description": "Lab 7 initializing node server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morganelle/07-node-npm.git"
+  },
+  "keywords": [
+    "lab7",
+    "codefellows",
+    "node",
+    "server",
+    "alex",
+    "morgan"
+  ],
+  "author": "Alex and Morgan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/morganelle/07-node-npm/issues"
+  },
+  "homepage": "https://github.com/morganelle/07-node-npm#readme",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}
