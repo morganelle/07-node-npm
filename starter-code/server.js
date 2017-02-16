@@ -12,6 +12,11 @@ const PORT = process.env.PORT || 3000;
 // DONE: Include all of the static resources as an argument to app.use()
 app.use(express.static('./public'));
 
+app.get('/new', function(request, response) {
+  response.sendFile('public/new.html', {root: '.'});
+
+});
+
 app.get('*', function(request, response) {
   response.sendFile('index.html', {root: './public'});
 
@@ -19,10 +24,7 @@ app.get('*', function(request, response) {
 });
 
 // DONE : (STRETCH) Write a new route that will handle a request and send the new.html file back to the user
-app.get('/new.html', function(request, response) {
-  response.sendFile('public/new.html', {root: '.'});
 
-});
 
 app.listen(PORT, function() {
   console.log('app is running on localhost:3000');
